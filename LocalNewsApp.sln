@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalNewsApp", "LocalNewsApp\LocalNewsApp.csproj", "{7D2AC0A6-F115-4266-A9A6-2F4009AF26D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalNews", "..\ConsoleApplication1\ConsoleApplication1\LocalNews.csproj", "{4B7C0D2E-0A09-45CC-92FA-EA77FEB08840}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D2AC0A6-F115-4266-A9A6-2F4009AF26D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D2AC0A6-F115-4266-A9A6-2F4009AF26D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D2AC0A6-F115-4266-A9A6-2F4009AF26D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D2AC0A6-F115-4266-A9A6-2F4009AF26D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B7C0D2E-0A09-45CC-92FA-EA77FEB08840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B7C0D2E-0A09-45CC-92FA-EA77FEB08840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B7C0D2E-0A09-45CC-92FA-EA77FEB08840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7C0D2E-0A09-45CC-92FA-EA77FEB08840}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

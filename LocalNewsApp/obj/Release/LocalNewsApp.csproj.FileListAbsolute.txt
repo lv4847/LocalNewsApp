@@ -1,0 +1,17 @@
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\bin\Release\LocalNewsApp.exe.config
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\bin\Release\LocalNewsApp.exe
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\bin\Release\LocalNewsApp.pdb
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\bin\Release\ConsoleApplication1.dll
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\bin\Release\Newtonsoft.Json.dll
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\bin\Release\ConsoleApplication1.pdb
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\bin\Release\Newtonsoft.Json.xml
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\obj\Release\LocalNewsApp.csprojResolveAssemblyReference.cache
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\obj\Release\MainWindow.baml
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\obj\Release\MainWindow.g.cs
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\obj\Release\App.g.cs
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\obj\Release\LocalNewsApp_MarkupCompile.cache
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\obj\Release\LocalNewsApp.g.resources
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\obj\Release\LocalNewsApp.Properties.Resources.resources
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\obj\Release\LocalNewsApp.csproj.GenerateResource.Cache
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\obj\Release\LocalNewsApp.exe
+C:\Users\Velag\Documents\Visual Studio 2013\Projects\LocalNewsApp\LocalNewsApp\obj\Release\LocalNewsApp.pdb

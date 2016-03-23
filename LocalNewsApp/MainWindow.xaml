@@ -1,0 +1,110 @@
+﻿<Window x:Class="LocalNewsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Weather &amp; News" Height="469.851" Width="559.329" ResizeMode="CanMinimize" Icon="sun.jpg">
+    <Canvas>
+        <GroupBox Header="Weather" FontSize="16" FontFamily="Comic Sans MS" Background="AliceBlue" BorderBrush="Blue" BorderThickness="1" Height="415" Width="255" Canvas.Top="10" Canvas.Left="10">
+            <!--<Border Background="AliceBlue" BorderBrush="Blue" BorderThickness="1" CornerRadius="8,8,8,8" Height="385" Width="240" Canvas.Top="10" Canvas.Left="10">-->
+            <Grid Margin="-1,9" Width="260">
+                <Image Panel.ZIndex="0" Source="{Binding Path=icon}" VerticalAlignment="Top" Height="50" HorizontalAlignment="Left"/>
+                <TextBlock HorizontalAlignment="Center" Margin="10,-13,0,0" TextWrapping="Wrap" Text="{Binding Path=temp}" VerticalAlignment="Top" FontSize="120" Height="144"/>
+                <TextBlock Text="{Binding Path=location}" Margin="1,131,9,182" FontSize="20" FontFamily="Comic Sans MS" HorizontalAlignment="Center" />
+                <RadioButton Content="Fahrenheit" Margin="10,168,148,122" GroupName="Temp" FontFamily="Comic Sans MS" IsChecked="True" Checked="TempRadioChecked"/>
+                <RadioButton Content="Centigrade" Margin="130,168,28,122" GroupName="Temp" FontFamily="Comic Sans MS" Checked="TempRadioChecked"/>
+                <WrapPanel Margin="0,197,0,-15">
+                    <Border BorderThickness="1" BorderBrush="Black" Background="Aquamarine">
+                        <TextBlock Text="Feelslike" FontSize="18" Width="118" FontFamily="Comic Sans MS"/>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="Black">
+                        <TextBlock Text="{Binding Path=feelslike}" FontSize="18" Width="118" FontFamily="Comic Sans MS"/>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="Black">
+                        <TextBlock Text="Humidity" FontSize="18" Width="118" FontFamily="Comic Sans MS"/>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="Black" Background="Aquamarine">
+                        <TextBlock Text="{Binding Path=humidity}" FontSize="18" Width="118" FontFamily="Comic Sans MS"/>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="Black" Background="Aquamarine">
+                        <TextBlock Text="Visibility" FontSize="18" Width="118" FontFamily="Comic Sans MS"/>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="Black">
+                        <TextBlock Text="{Binding Path=visibility}" FontSize="18" Width="118" FontFamily="Comic Sans MS"/>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="Black">
+                        <TextBlock Text="Wind Speed" FontSize="18" Width="118" FontFamily="Comic Sans MS"/>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="Black" Background="Aquamarine">
+                        <TextBlock Text="{Binding Path=windspeed}" FontSize="18" Width="118" FontFamily="Comic Sans MS"/>
+                    </Border>
+                    <RadioButton Content="Miles" GroupName="Dist" FontSize="15" Width="118" FontFamily="Comic Sans MS" IsChecked="True" Checked="DistRadioChecked"/>
+                    <RadioButton Content="Kilometers" GroupName="Dist" FontSize="15" Width="118" FontFamily="Comic Sans MS" Checked="DistRadioChecked"/>
+                    <TextBlock Text="{Binding Path=update}" Width="236" FontSize="13" FontFamily="Comic Sans MS"/>
+                    <Button BorderBrush="Black" Content="Refresh" Width="238" Height="21" FontFamily="Comic Sans MS" FontSize="15" Click="RefreshWeather"/>
+                </WrapPanel>
+            </Grid>
+            <!--</Border>-->
+        </GroupBox>
+        <GroupBox Header="News" FontSize="16" FontFamily="Comic Sans MS" Background="AliceBlue" BorderBrush="Blue" BorderThickness="1" Height="415" Width="255" Canvas.Top="10" Canvas.Left="280">
+            <Grid>
+                <WrapPanel Margin="0,0,0,354">
+                    <TextBox Name="SearchText" Text="Search News" Foreground="Gray" Width="210" GotFocus="SearchNewsGotFocus" LostFocus="SearchNewsLostFocus"/>
+                    <Button Click="GetNews">
+                        <Image Source="search.jpg"/>
+                    </Button>
+                </WrapPanel>
+                <StackPanel Margin="0,54,0,0">
+                    <BulletDecorator>
+                        <BulletDecorator.Bullet>
+                            <Ellipse Height="5" Width="5" Fill="{Binding Path=bullet_color1}"/>
+                        </BulletDecorator.Bullet>
+                        <TextBlock Text="{Binding Path=headline1}" TextWrapping="Wrap" HorizontalAlignment="Left" FontSize="14">
+                            <Hyperlink NavigateUri="{Binding Path=url1}" RequestNavigate="Hyperlink_RequestNavigate" FontSize="14">
+                                <TextBlock />
+                            </Hyperlink>
+                        </TextBlock>
+                    </BulletDecorator>
+                    <BulletDecorator>
+                        <BulletDecorator.Bullet>
+                            <Ellipse Height="5" Width="5" Fill="{Binding Path=bullet_color2}"/>
+                        </BulletDecorator.Bullet>
+                        <TextBlock Text="{Binding Path=headline2}" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="14">
+                        <Hyperlink NavigateUri="{Binding Path=url2}" RequestNavigate="Hyperlink_RequestNavigate" FontSize="14">
+                            View
+                        </Hyperlink>
+                        </TextBlock>
+                    </BulletDecorator>
+                    <BulletDecorator>
+                        <BulletDecorator.Bullet>
+                            <Ellipse Height="5" Width="5" Fill="{Binding Path=bullet_color3}"/>
+                        </BulletDecorator.Bullet>
+                        <TextBlock Text="{Binding Path=headline3}" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="14">
+                        <Hyperlink NavigateUri="{Binding Path=url3}" RequestNavigate="Hyperlink_RequestNavigate" FontSize="14">
+                            View
+                        </Hyperlink>
+                        </TextBlock>
+                    </BulletDecorator>
+                    <BulletDecorator>
+                        <BulletDecorator.Bullet>
+                            <Ellipse Height="5" Width="5" Fill="{Binding Path=bullet_color4}"/>
+                        </BulletDecorator.Bullet>
+                        <TextBlock Text="{Binding Path=headline4}" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="14">
+                        <Hyperlink NavigateUri="{Binding Path=url4}" RequestNavigate="Hyperlink_RequestNavigate" FontSize="14">
+                            View
+                        </Hyperlink>
+                        </TextBlock>
+                    </BulletDecorator>
+                    <BulletDecorator>
+                        <BulletDecorator.Bullet>
+                            <Ellipse Height="5" Width="5" Fill="{Binding Path=bullet_color5}"/>
+                        </BulletDecorator.Bullet>
+                        <TextBlock Text="{Binding Path=headline5}" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="14">
+                        <Hyperlink NavigateUri="{Binding Path=url5}" RequestNavigate="Hyperlink_RequestNavigate" FontSize="14">
+                            View
+                        </Hyperlink>
+                        </TextBlock>
+                    </BulletDecorator>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+    </Canvas>
+</Window>
